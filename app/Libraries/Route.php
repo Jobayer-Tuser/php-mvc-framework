@@ -49,10 +49,10 @@ class Route {
                     $methodName = $callback[1];
                     // $instance = $className::getInstance();
                     $instance = new $className();
-
                     
                     try {
                         $ins = $instance->$methodName(...$functionArgs);
+                        
                     } catch (\InvalidArgumentException $error) {
                         print_r($error->getMessage());
                     }
