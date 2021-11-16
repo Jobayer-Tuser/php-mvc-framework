@@ -1,0 +1,17 @@
+<?php
+
+namespace Route\Path;
+
+use App\Libraries\Route;
+use App\Http\controller\Controller;
+use App\Http\controller\TestController;
+
+
+Route::get('/home', [Controller::class, 'index']);
+
+Route::get('/test/index', [TestController::class, 'index']);
+Route::get('/test/update', [TestController::class, 'update']);
+
+
+// Route::get('/home', 'Controller@index');
+Route::cleanUrl();
