@@ -52,7 +52,7 @@ class Route {
                     
                     try {
                         $ins = $instance->$methodName(...$functionArgs);
-                        
+
                     } catch (\InvalidArgumentException $error) {
                         print_r($error->getMessage());
                     }

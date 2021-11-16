@@ -23,3 +23,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 |
 */
 require_once __DIR__. '/../bootstrap/require.php';
+
+use App\Libraries\DotEnv;
+
+// print_r(__DIR__);
+
+(new DotEnv( __DIR__ . '/../.env'))->load();
+
+echo getenv('DB_CONNECTION');
