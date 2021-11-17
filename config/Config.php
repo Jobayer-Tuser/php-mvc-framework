@@ -1,7 +1,11 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', '');
-define('DB_USER', '');
-define('DB_PASS', '');
+use App\Libraries\DotEnv;
 
+define('PROJECT_PATH', dirname(__DIR__));
+define('ENV_PATH', dirname(__DIR__). '/.env');
+
+
+(new DotEnv(ENV_PATH))->load();
+
+echo getenv('DB_DATABASE');
