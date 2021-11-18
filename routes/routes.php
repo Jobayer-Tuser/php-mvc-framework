@@ -6,6 +6,7 @@ use App\Libraries\Route;
 use App\Http\controller\Controller;
 use App\Http\controller\TestController;
 
+
 Route::get('/', function(){
     include __DIR__ . '/../public/index.php';
 });

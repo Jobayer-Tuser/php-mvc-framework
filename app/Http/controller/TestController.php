@@ -1,7 +1,16 @@
 <?php
+
 namespace App\Http\controller;
 
+use Jenssegers\Blade\Blade;
+
 class TestController extends Controller {
+
+    private $blade;
+    public function __construct() {
+
+        $this->blade = new Blade( VIEW_PATH . 'home', CACHE_PATH );
+    }
 
     public function index() {
 
@@ -40,8 +49,7 @@ class TestController extends Controller {
             ),
         );
 
-
-        $this->view('home/index', $fields);
+        echo $this->blade->render('index', $fields);
     }
 
     public function update() {
