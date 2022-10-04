@@ -1,0 +1,22 @@
+{
+    "name": "jobayer/php-app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jobayer Al Madmud Tuser",
+            "email": "jtuser112@gmail.com"
+        }
+    ],
+    "require": {
+      "ext-curl": "*",
+        "symfony/mailer": "^5.4",
+        "psr/container": "2.0.2"
+    }
+}
