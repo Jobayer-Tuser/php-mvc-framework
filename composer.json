@@ -21,7 +21,6 @@
     "require": {
         "ext-curl": "*",
         "symfony/mailer": "^5.4",
-        "psr/container": "2.0.2",
         "jenssegers/blade": "dev-master"
     },
     "require-dev": {

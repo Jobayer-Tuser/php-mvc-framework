@@ -1,3 +1,5 @@
 /vendor
 /.idea
 /.vscode
+.idea/php-app.iml
+.idea/php.xml
