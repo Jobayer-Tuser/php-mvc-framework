@@ -22,10 +22,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="mvc-framework" />
     <orderEntry type="module" module-name="ExamSimulation" />
     <orderEntry type="module" module-name="sms-gateway" />
     <orderEntry type="module" module-name="superb" />

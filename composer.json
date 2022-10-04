@@ -1,5 +1,8 @@
 {
-    "name": "jobayer/php-app",
+    "name": "jobayer/mvc",
+    "description": "MVC Structure",
+    "type" : "mvc-project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
@@ -14,9 +17,14 @@
             "email": "jtuser112@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-      "ext-curl": "*",
+        "ext-curl": "*",
         "symfony/mailer": "^5.4",
-        "psr/container": "2.0.2"
+        "psr/container": "2.0.2",
+        "jenssegers/blade": "dev-master"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "5.4.x-dev"
     }
 }
