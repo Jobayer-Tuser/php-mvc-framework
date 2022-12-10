@@ -2,8 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Attributes\Get;
-use App\Attributes\Post;
+use App\Attributes\{Get,Post};
 
 class ServiceController
 {
@@ -11,7 +10,7 @@ class ServiceController
     #[Get("/hello")]
     public function index()
     {
-        return view('service.index', ["fo" => "bar"]);
+        return view('service.dashboard');
     }
 
     #[Post("/store")]
