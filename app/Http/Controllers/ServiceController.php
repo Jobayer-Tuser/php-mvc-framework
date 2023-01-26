@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Http\Controllers;
 
-use App\Attributes\{Get,Post};
+use App\Models\Database;
+use App\Attributes\{Get, Post};
+
 
 class ServiceController
 {
@@ -10,7 +12,11 @@ class ServiceController
     #[Get("/hello")]
     public function index()
     {
-        return view('service.dashboard');
+//        dd($_SERVER);
+
+        Database::getInstance();
+        $data = ['name' => "Jobayer"];
+        return view("service.dashboard", $data);
     }
 
     #[Post("/store")]

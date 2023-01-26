@@ -34,7 +34,7 @@
 <!--  END LOADER -->
 
 <!--  BEGIN NAVBAR  -->
-<?php include_once VIEW_PATH . "/includes/_navbar.php"?>
+<?php include_once VIEWS . "/includes/_navbar.php"?>
 <!--  END NAVBAR  -->
 
 <!--  BEGIN MAIN CONTAINER  -->

@@ -1,17 +1,27 @@
 <?php
 declare(strict_types=1);
+
 error_reporting(E_ALL); //to show errors
-ini_set('display_errors', TRUE); //Sets the value of a configuration option
-ini_set('display_startup_errors', TRUE);
+ini_set('display_errors', "1"); //Sets the value of a configuration option
+ini_set('display_startup_errors', "1");
 
-define('BASE_PATH', realpath(dirname(__FILE__,2)));
-require(BASE_PATH . "/vendor/autoload.php");
-const VIEW_PATH = __DIR__ . "/../resources/views";
-const BASE_ASSETS_PATH = __DIR__ . "/assets/";
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+*/
+require(__DIR__ . "/../vendor/autoload.php");
 
-//require (__DIR__ . "/../routes/route.php");
-require (__DIR__ . "/../routes/web.php");
+/*
+|--------------------------------------------------------------------------
+| Bootstrap the application
+|--------------------------------------------------------------------------
+*/
+require(__DIR__ . "/../bootstrap/Application.php");
 
-//xdebug_info();
-
-//echo BASE_ASSETS_PATH;
+/*
+|--------------------------------------------------------------------------
+| Run the application
+|--------------------------------------------------------------------------
+*/
+Application::run();

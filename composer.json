@@ -21,6 +21,8 @@
     "require": {
         "ext-curl": "*",
         "symfony/mailer": "^5.4",
+        "filp/whoops": "^2.14",
+        "maximebf/debugbar": ">=1.0.0",
         "jenssegers/blade": "dev-master"
     },
     "require-dev": {
