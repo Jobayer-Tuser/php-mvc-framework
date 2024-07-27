@@ -2,7 +2,7 @@
 
 namespace App\Sessions;
 
-class Cookiee
+class Cookie
 {
     private function __construct(){}
     /**

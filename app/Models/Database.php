@@ -6,7 +6,8 @@ use App\Http\Request;
 use PDO;
 use PDOException;
 use Exception;
-class Eloquent
+
+class Database
 {
     /**
      *Database $instance
@@ -146,7 +147,7 @@ class Eloquent
     public static function instance() : object
     {
         if( !isset(self::$instance) ) {
-            self::$instance = new Eloquent();
+            self::$instance = new Database();
         }
         return self::$instance;
     }
@@ -156,7 +157,7 @@ class Eloquent
         self::instance();
         if ($query == null){
             if (!self::$table){
-                throw new PDOException("Unknown table" . self::$table);
+                throw new PDOException(self::$table . " Table not found in your Database");
             }
 
             $query = "SELECT ";

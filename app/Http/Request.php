@@ -42,4 +42,8 @@ class Request
     private static function setUrl(): void
     {
     }
+
+    public static function get(string $string)
+    {
+    }
 }

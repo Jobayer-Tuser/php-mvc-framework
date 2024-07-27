@@ -2,19 +2,36 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Database;
+use App\Models\Admin;
 use App\Attributes\{Get, Post};
 
 
 class ServiceController
 {
 
-    #[Get("/hello")]
+    #[Get("/getQuery")]
     public function index()
     {
-//        dd($_SERVER);
+//        Database::table("product")
+//            ->select("name", "price", "date")
+//            ->join("roles", "roles.id", "=", "users.role_id")
+//            ->rightJoin("roles", "roles.id", "=", "users.role_id")
+//            ->leftJoin("roles", "roles.id", "=", "users.role_id")
+//            ->where("id" , "=" , 20)
+//            ->where("name" , "!=", "Jobayer")
+//            ->orWhere("name", "=>", 10)
+//            ->orderBy("id")
+//            ->orderBy("name", "desc")
+//            ->limit(20)
+//            ->offset(20)
+//            ->getQuery();
+//
+//        Database::table("product")->insert(['name' => "jobyaer"]);
+//        Database::table("product")->where(['id', "=", 1])->update(['name' => "tuser"]);
+//        Database::table("product")->where(['id', "=", 1])->delete();
 
-        Database::getInstance();
+        return Admin::select("admin_name", "admin_email")->getQuery();
+
         $data = ['name' => "Jobayer"];
         return view("service.dashboard", $data);
     }

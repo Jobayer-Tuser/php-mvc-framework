@@ -2,7 +2,7 @@
 return [
     "host" => "127.0.0.1",
     "port" => "3306",
-    "database" => "nexus_topup",
+    "database" => "nex_topup",
     "username" => "root",
     "password" => "RootPass!@",
     "charset" => "utf8mb4",

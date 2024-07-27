@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Eloquent
+abstract class Eloquent extends Database
 {
 
 }

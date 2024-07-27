@@ -260,7 +260,7 @@ class Route
      * @return void
      * @throws ReflectionException
      */
-    private static function registerRouteFromControllerAttributes(array $controllers) : void
+    public static function registerRouteFromControllerAttributes(array $controllers): void
     {
         foreach ($controllers as $controller){
             $reflectionController = new \ReflectionClass($controller);

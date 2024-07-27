@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Admin
+class Admin extends Eloquent
 {
-
+    protected static $table = "admins";
 }

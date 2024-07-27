@@ -2,7 +2,10 @@
 
 namespace App\Solid\OpenClosed;
 
-class StripePayment
+class StripePayment implements Payable
 {
-
+    public function pay() : string
+    {
+       return "Stripe payment";
+    }
 }
