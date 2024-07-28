@@ -25,8 +25,13 @@ class DotEnv
 
         $lines = file( $this->filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES );
 
+        $this->parseEnvNameAndValue($lines);
+    }
+
+    private function parseEnvNameAndValue($lines): void
+    {
         foreach ($lines as $line) {
-            
+
             if (str_starts_with(trim($line), '#')) {
                 continue;
             }

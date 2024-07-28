@@ -12,20 +12,19 @@
 
 </head>
 <body>
+    <div id="app" class="app">
+        @include('includes._header')
+        @include('includes._navbar')
 
-<div id="app" class="app">
-    @include('includes._header')
-    @include('includes._navbar')
+        <div id="content" class="app-content">
+           @yield('content')
+        </div>
 
-    <div id="content" class="app-content">
-       @yield('content')
+        @include('includes._footer')
     </div>
 
-    @include('includes._footer')
-</div>
-
-<script src="assets/js/vendor.min.js" type="text/javascript"></script>
-<script src="assets/js/app.min.js" type="text/javascript"></script>
+    <script src="assets/js/vendor.min.js" type="text/javascript"></script>
+    <script src="assets/js/app.min.js" type="text/javascript"></script>
 
 </body>
 </html>

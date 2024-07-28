@@ -7,19 +7,19 @@ class File
     /**
      * Get file full path
      *
-     * @param $path
+     * @param string $path
      * @return string
      */
     public static function path(string $path): string
     {
         $path = trim($path, "/");
-        return $path = ROOT . DIRECTORY_SEPARATOR . $path;
+        return ROOT . DIRECTORY_SEPARATOR . $path;
     }
 
     /**
      * Check if the file exists
      *
-     * @param $path
+     * @param string $path
      * @return bool
      */
     public static function exists(string $path) : bool
@@ -30,7 +30,7 @@ class File
     /**
      * Require a file
      *
-     * @param $path
+     * @param string $path
      * @return void
      */
     public static function require_file(string $path) : void
@@ -43,10 +43,10 @@ class File
     /**
      * Include a file
      *
-     * @param $path
+     * @param string $path
      * @return void
      */
-    public static function include_file(string $path) : void
+    public static function includeFile(string $path) : void
     {
         if(static::exists($path)){
             include(static::path(path: $path));
@@ -56,12 +56,13 @@ class File
     /**
      * Require a directory
      *
-     * @param $path
+     * @param string $path
      * @return void
      */
-    public static function require_directory(string $path)
+    public static function requireDirectory(string $path): void
     {
         $files = array_diff(scandir(static::path(path: $path)), [".", ".."]);
+
         foreach ($files as $file){
             $file_path = $path . DIRECTORY_SEPARATOR . $file;
             if (static::exists($file_path)){

@@ -1,4 +1,5 @@
 /vendor
+/storage/cache
 /.idea
 /.vscode
 .idea/php-app.iml

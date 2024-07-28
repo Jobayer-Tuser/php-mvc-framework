@@ -8,4 +8,9 @@ class HomepageController
     {
         return view('layouts.app');
     }
+
+    public function dashboard()
+    {
+        return view('service.dashboard');
+    }
 }
