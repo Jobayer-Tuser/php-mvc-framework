@@ -1,59 +1,295 @@
-<div class="header-container container-xxl">
-    <header class="header navbar navbar-expand-sm expand-header">
-
-        <a href="javascript:void(0);" class="nav-link theme-toggle p-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon dark-mode"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun light-mode"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-        </a>
-
-        <a href="javascript:void(0);" class="sidebarCollapse">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        </a>
-
-        <ul class="navbar-item flex-row ms-lg-auto ms-0">
-
-            <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <div class="avatar-container">
-                        <div class="avatar avatar-sm avatar-indicators avatar-online">
-                            <img alt="avatar" src="../../src/assets/img/profile-30.png" class="rounded-circle">
-                        </div>
-                    </div>
+<div id="sidebar" class="app-sidebar">
+    <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+        <div class="menu">
+            <div class="menu-header">Navigation</div>
+            <div class="menu-item">
+                <a href="index-2.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-laptop"></i></span>
+                    <span class="menu-text">Dashboard</span>
                 </a>
-
-                <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
-                    <div class="user-profile-section">
-                        <div class="media mx-auto">
-                            <img src="../../src/assets/img/profile-30.png" class="img-fluid me-2" alt="avatar">
-                            <div class="media-body">
-                                <h5>Shaun Park</h5>
-                                <p>Project Leader</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dropdown-item">
-                        <a href="javascript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>Profile</span>
+            </div>
+            <div class="menu-item">
+                <a href="analytics.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-chart-pie"></i></span>
+                    <span class="menu-text">Analytics</span>
+                </a>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+<span class="menu-icon">
+<i class="fa fa-envelope"></i>
+<span class="menu-icon-label">6</span>
+</span>
+                    <span class="menu-text">Email</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="email_inbox.html" class="menu-link">
+                            <span class="menu-text">Inbox</span>
                         </a>
                     </div>
-                    <div class="dropdown-item">
-                        <a href="javascript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> <span>Inbox</span>
+                    <div class="menu-item">
+                        <a href="email_compose.html" class="menu-link">
+                            <span class="menu-text">Compose</span>
                         </a>
                     </div>
-                    <div class="dropdown-item">
-                        <a href="javascript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
-                        </a>
-                    </div>
-                    <div class="dropdown-item">
-                        <a href="javascript:void(0);">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
+                    <div class="menu-item">
+                        <a href="email_detail.html" class="menu-link">
+                            <span class="menu-text">Detail</span>
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-header">Components</div>
+            <div class="menu-item">
+                <a href="widgets.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-qrcode"></i></span>
+                    <span class="menu-text">Widgets</span>
+                </a>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-heart"></i></span>
+                    <span class="menu-text">UI Kits</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="ui_bootstrap.html" class="menu-link">
+                            <span class="menu-text">Bootstrap</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_buttons.html" class="menu-link">
+                            <span class="menu-text">Buttons</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_card.html" class="menu-link">
+                            <span class="menu-text">Card</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_icons.html" class="menu-link">
+                            <span class="menu-text">Icons</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_modal_notification.html" class="menu-link">
+                            <span class="menu-text">Modal & Notification</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_typography.html" class="menu-link">
+                            <span class="menu-text">Typography</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="ui_tabs_accordions.html" class="menu-link">
+                            <span class="menu-text">Tabs & Accordions</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-file-alt"></i></span>
+                    <span class="menu-text">Forms</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="form_elements.html" class="menu-link">
+                            <span class="menu-text">Form Elements</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="form_plugins.html" class="menu-link">
+                            <span class="menu-text">Form Plugins</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="form_wizards.html" class="menu-link">
+                            <span class="menu-text">Wizards</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-table"></i></span>
+                    <span class="menu-text">Tables</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="table_elements.html" class="menu-link">
+                            <span class="menu-text">Table Elements</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="table_plugins.html" class="menu-link">
+                            <span class="menu-text">Table Plugins</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-chart-bar"></i></span>
+                    <span class="menu-text">Charts</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="chart_js.html" class="menu-link">
+                            <span class="menu-text">Chart.js</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="chart_apex.html" class="menu-link">
+                            <span class="menu-text">Apexcharts.js</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="map.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-map-marker-alt"></i></span>
+                    <span class="menu-text">Map</span>
+                </a>
+            </div>
+            <div class="menu-item has-sub active">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-code-branch"></i></span>
+                    <span class="menu-text">Layout</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item active">
+                        <a href="layout_starter.html" class="menu-link">
+                            <span class="menu-text">Starter Page</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="layout_fixed_footer.html" class="menu-link">
+                            <span class="menu-text">Fixed Footer</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="layout_full_height.html" class="menu-link">
+                            <span class="menu-text">Full Height</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="layout_full_width.html" class="menu-link">
+                            <span class="menu-text">Full Width</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="layout_boxed_layout.html" class="menu-link">
+                            <span class="menu-text">Boxed Layout</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="layout_minified_sidebar.html" class="menu-link">
+                            <span class="menu-text">Minified Sidebar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item has-sub">
+                <a href="#" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-globe"></i></span>
+                    <span class="menu-text">Pages</span>
+                    <span class="menu-caret"><b class="caret"></b></span>
+                </a>
+                <div class="menu-submenu">
+                    <div class="menu-item">
+                        <a href="page_scrum_board.html" class="menu-link">
+                            <span class="menu-text">Scrum Board</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_products.html" class="menu-link">
+                            <span class="menu-text">Products</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_orders.html" class="menu-link">
+                            <span class="menu-text">Orders</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_gallery.html" class="menu-link">
+                            <span class="menu-text">Gallery</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_search_results.html" class="menu-link">
+                            <span class="menu-text">Search Results</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_coming_soon.html" class="menu-link">
+                            <span class="menu-text">Coming Soon Page</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_404_error.html" class="menu-link">
+                            <span class="menu-text">404 Error Page</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_login.html" class="menu-link">
+                            <span class="menu-text">Login</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="page_register.html" class="menu-link">
+                            <span class="menu-text">Register</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-header">Users</div>
+            <div class="menu-item">
+                <a href="profile.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-user-circle"></i></span>
+                    <span class="menu-text">Profile</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="calendar.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-calendar"></i></span>
+                    <span class="menu-text">Calendar</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="settings.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-cog"></i></span>
+                    <span class="menu-text">Settings</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="helper.html" class="menu-link">
+                    <span class="menu-icon"><i class="fa fa-question-circle"></i></span>
+                    <span class="menu-text">Helper</span>
+                </a>
+            </div>
+            <div class="p-3 px-4 mt-auto hide-on-minified">
+                <a href="documentation/index.html" class="btn btn-secondary d-block w-100 fw-600 rounded-pill">
+                    <i class="fa fa-code-branch me-1 ms-n1 opacity-5"></i> Documentation
+                </a>
+            </div>
+        </div>
 
-            </li>
-        </ul>
-    </header>
+    </div>
+
+
+    <button class="app-sidebar-mobile-backdrop" data-dismiss="sidebar-mobile"></button>
+
 </div>

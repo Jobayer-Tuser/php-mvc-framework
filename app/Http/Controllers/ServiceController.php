@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Admin;
-use App\Attributes\{Get, Post};
+use Provider\Attributes\{Post};
+use Provider\Attributes\Get;
 
 
 class ServiceController

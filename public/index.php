@@ -17,11 +17,4 @@ require(__DIR__ . "/../vendor/autoload.php");
 | Bootstrap the application
 |--------------------------------------------------------------------------
 */
-require(__DIR__ . "/../bootstrap/Application.php");
-
-/*
-|--------------------------------------------------------------------------
-| Run the application
-|--------------------------------------------------------------------------
-*/
-Application::run();
+require(__DIR__ . "/../bootstrap/app.php");

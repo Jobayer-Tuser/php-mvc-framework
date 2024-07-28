@@ -1,21 +1,8 @@
 <?php
 
-use App\Http\Controllers\{Route, ServiceController};
+use App\Http\Controllers\{HomepageController};
+use App\Http\Controllers\ServiceController;
+use Provider\Handlers\Route;
 
- try {
-    Route::registerRouteFromControllerAttributes([
-        ServiceController::class,
-    ]);
- } catch (ReflectionException $exception) {
-    echo $exception->getMessage();
- }
 
- Route::prefix("admin", function (){
-    Route::get("dashboard", [ServiceController::class, "index"]);
- });
-
-// Route::middleware("Admin", function (){
-//    Route::get("middleware", [ServiceController::class, "index"]);
-// });
-
- Route::get("dashboard", [ServiceController::class, "index"]);
+Route::get("/", [HomepageController::class, "index"]);
