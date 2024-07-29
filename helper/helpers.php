@@ -1,6 +1,8 @@
 <?php
 
+use JetBrains\PhpStorm\NoReturn;
 use Provider\Handlers\Cookie;
+use Provider\Handlers\Database;
 use Provider\Handlers\Session;
 use Provider\Handlers\View;
 
@@ -9,18 +11,12 @@ function view(string $page, array $arguments = []): string
     return View::render($page, $arguments);
 }
 
-function asset(array $assets) : void
+function tempDir(): string
 {
-    foreach ($assets as $asset){
-        echo '<link href="/assets/'.$asset.'"/>';
-    }
+    return __DIR__ . '/../temp/';
 }
 
-/**
- * @param $path
- * @return void
- */
-function redirect($path) : void
+#[NoReturn] function redirect($path) : void
 {
     header("Location: $path");
     exit();
@@ -31,8 +27,8 @@ function session($key): ?string
     return Session::get($key);
 }
 
-function auth($table)
+function auth($table): false|array
 {
     $auth = Session::get($table) ?: Cookie::get($table);
-    return \Provider\Handlers\Database::table($table)->where("id", "=", $auth)->first();
+    return Database::table($table)->where("id", "=", $auth)->first();
 }

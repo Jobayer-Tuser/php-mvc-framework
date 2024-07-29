@@ -412,7 +412,7 @@ class Database
      * @param $where
      * @return void
      */
-    public static function execute(array $data, $query, $where = null)
+    public static function execute(array $data, $query, $where = null): void
     {
         self::instance();
         if (!self::$table){
@@ -440,7 +440,7 @@ class Database
      * Insert records
      *
      * @param array $data
-     * @return mixed
+     * @return array|false
      */
     public static function insert(array $data)
     {

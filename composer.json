@@ -14,17 +14,21 @@
     },
     "authors": [
         {
-            "name": "Jobayer Al Madmud Tuser",
+            "name": "Md Jobayer Al Madmud",
             "email": "jtuser112@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "require": {
-        "ext-curl": "*",
+        "symfony/console": "7.2.x-dev",
+        "symfony/process": "7.2.x-dev",
         "symfony/mailer": "^5.4",
         "filp/whoops": "^2.14",
         "maximebf/debugbar": ">=1.0.0",
-        "jenssegers/blade": "dev-master"
+        "jenssegers/blade": "dev-master",
+        "illuminate/view": "11.7.0",
+        "ext-pdo": "*",
+        "ext-curl": "*"
     },
     "require-dev": {
         "symfony/var-dumper": "5.4.x-dev"
